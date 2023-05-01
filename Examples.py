@@ -46,4 +46,16 @@ tensor9 = torch.from_numpy(numpy_array)    # convert a NumPy array to a PyTorch 
 numpy_array2 = tensor5.numpy()             # convert a PyTorch tensor to a NumPy array
 
 # Reproducibility
-torch.manual_seed(42)                      # set a manual seed for reproducibility
+torch.manual_seed(42)                      # set a manual seed
+
+# Check if GPU is available
+if torch.cuda.is_available():
+    device = torch.device("cuda")          # set device to GPU
+    print("Using GPU")
+else:
+    device = torch.device("cpu")           # set device to CPU
+    print("Using CPU")
+
+# Create a tensor and move it to GPU
+tensor1 = torch.Tensor([[1, 2], [3, 4]])
+tensor1 = tensor1.to(device)
