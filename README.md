@@ -7,3 +7,14 @@ In this repository, you'll find Jupyter notebooks with step-by-step instructions
 The notebooks are designed to be self-contained, with all necessary code and data included, so you can easily follow along and experiment with the code. Additionally, the repository includes resources such as cheat sheets, tutorials, and links to other helpful learning materials.
 
 Whether you're a beginner looking to get started with deep learning or an experienced practitioner looking to expand your skills with PyTorch, this repository has something for you. So dive in and start building some cutting-edge deep learning models!
+
+
+
+    Introduction to tensors
+    Creating tensors
+    Getting information from tensors
+    Manipulating tensors
+    Dealing with tensor shapes
+    Indexing on tensors
+    Mixing PyTorch tensors and NumPy
+    Reproducibility
